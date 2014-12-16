@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Asisten</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" class="navbar-toggle collapsed">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<img src="#" class="pull-left">-->
+          <a href="/" class="navbar-brand">Sistem Informasi Asisten</a>
+        </div>
+        <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Nama Mahasiswa</a></li>
+            <li><a href="#about">Manual</a></li>
+            <li><a href="#contact">Log out</a></li>
+            <li>&nbsp&nbsp&nbsp&nbsp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div role="navigation">
+        <ul class="nav nav-justified">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li class="active"><a href="lowongan.html">Lowongan</a></li>
+          <li><a href="#">Log Asisten</a></li>
+          <li><a href="#">Riwayat</a></li>
+          <li><a href="#">Pembayaran</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+		<div class = "row text-center">
+			<h2>Profil Asisten</h2>
+		</div>
+		
+      <div class="panel panel-default col-lg-10 col-lg-offset-1">
+        <div class="panel-body">        
+			<div class="alert alert-dismissable alert-success">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<p>Profil berhasil diperbarui!</p>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Data Pribadi</div>
+				<div class = "panel-body">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="../img/doraemon_wallpaper.jpg" alt="profilepict" style="height:250px;">
+					<form class="form-horizontal" style = "float:right;width:80%">
+						<!-- Input Nama -->
+						<div class="form-group">
+						  <label for="name" class="col-lg-2 control-label">Nama</label>
+						  <div class="col-lg-5">
+								<input class="form-control" type="text" value="Aradea Krisnaraga" disabled="">
+						  </div>
+						</div>
+						<!-- Input Username -->
+						<div class="form-group">
+						  <label for="name" class="col-lg-2 control-label">Username</label>
+						  <div class="col-lg-5">
+								<input class="form-control" type="text" value="aradea.krisnaraga" disabled="">
+						  </div>
+						</div>
+						<!-- Input NPM -->
+						<div class="form-group">
+						  <label for="name" class="col-lg-2 control-label">NPM</label>
+						  <div class="col-lg-5">
+								<input class="form-control" type="text" value="1106001234" disabled="">
+						  </div>
+						</div>
+						<!-- Input email -->
+						<div class="form-group">
+						  <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+						  <div class="col-lg-5">
+							<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="aradea.krisnaraga@ui.ac.id">
+						  </div>
+						</div>
+						<!-- Input nomor telepon -->
+						<div class="form-group">
+						  <label for="inputEmail" class="col-lg-2 control-label">No. Telepon</label>
+						  <div class="col-lg-5">
+							<input type="text" class="form-control" id="inputEmail" placeholder="Nomor Telepon" value="081123456789">
+						  </div>
+						</div>
+					</form>
+				</div>
+			 </div>	
+			
+			<div class="panel panel-default"> 
+				<div class="panel-heading">Data Pembayaran</div> 
+				<div class="panel-body">
+					<form class="form-horizontal"> 
+					<!-- Input nama bank -->
+						<div class="form-group">
+						  <label for="bank" class="col-lg-3 control-label">Nama Bank</label>
+						  <div class="col-lg-8">
+							<input type="text" class="form-control" id="bank" placeholder="Nama Bank" value="BCX">
+						  </div>
+						</div>
+						<!-- Input nomor telepon -->
+						<div class="form-group">
+						  <label for="norek" class="col-lg-3 control-label">Nomor Rekening</label>
+						  <div class="col-lg-8">
+							<input type="text" class="form-control" id="norek" placeholder="Nomor Rekening" value="0123456789">
+							<span class="help-block">Pastikan sesuai dengan nomor rekening pada buku tabungan</span>
+						  </div>
+						</div>
+						<!-- Input nomor telepon -->
+						<div class="form-group">
+						  <label for="atasnama" class="col-lg-3 control-label">Atas Nama</label>
+						  <div class="col-lg-8">
+							<input type="text" class="form-control" id="atasnama" placeholder="Atas Nama" value="Aradea Krisnaraga">
+							<span class="help-block">Pastikan sesuai dengan atas nama pada buku tabungan</span>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<div class="panel panel-default"> 
+				<div class="panel-heading">Data Lainnya</div> 
+				<div class="panel-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="textArea" class="col-lg-3 control-label">Waktu Kosong Per Pekan</label>
+						 	<div class="input-group col-lg-8">
+						 		<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-calendar"></button>
+								</span>
+								<input type="text" class="form-control">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">TAMBAH</button>
+								</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="textArea" class="col-lg-3 control-label"></label>
+						 	<div class="input-group col-lg-8">
+								<li class="list-group-item">
+									<h5 class="list-group-item-heading">Senin&nbsp;&nbsp;<small>08.00 - 10.00</small></h5>
+								</li>
+								<li class="list-group-item">
+									<h5 class="list-group-item-heading">Kamis&nbsp;&nbsp;<small>13.00 - 16.00</small></h5>
+								</li>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>		
+			<button type="submit" class="btn btn-primary btn-lg btn-block">SIMPAN PROFIL</button>
+		</div>
+	</div>
+	
+    <footer class="footer">
+
+    </footer>
+  </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
