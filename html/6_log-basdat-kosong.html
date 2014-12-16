@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tambah Log</title>
+  <title>Daftar Log</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/customized.css" rel="stylesheet">
-  <link href="../css/slider.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
+    <!-- Navbar Bagian Atas -->
     <div class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -36,6 +36,7 @@
       </div>
     </div>
 
+    <!-- Tab Beranda, Lowongan, dkk -->
     <div class="container">
       <div role="navigation">
         <ul class="nav nav-justified">
@@ -48,60 +49,52 @@
       </div>
     </div>
 
+    <!-- Isi dari Halaman -->
     <div class="container">
       <div class="row text-center">
-        <h4>Pengisian Log Asisten</h4>
-        <h3>IKI20700 - Basis Data</h3>
+        <h2>Daftar Log</h2>
       </div>
       <div class="panel panel-default">
         <div class="panel-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label class="col-md-2 control-label">Tanggal</label>
-              <div class="col-md-5">
-                <input class="form-control" placeholder="Tanggal Log" type="date">
+          <div class-"col-md-12">
+            <div class="col-md-3">
+              <span>Mata Kuliah:</span>
+              <div class="bs-component">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a href="log.html" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      Basis Data
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="log.html">Basis Data</a></li>
+                      <li><a href="log_sc.html">Sistem Cerdas</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="col-md-2 control-label">Waktu</label>
-              <div class="col-md-5">
-                <div class="slider slider-horizontal" style="width: 414px;">
-                  <div class="slider-track">
-                  <div class="slider-selection" style="left: 23.2323232323232%; width: 43.9393939393939%;"></div>
-                  <div class="slider-handle round" style="left: 23.2323232323232%;"></div>
-                  <div class="slider-handle round" style="left: 67.1717171717172%;"></div>
-                  </div>
-                  <div class="tooltip top" style="top: -40px; left: 159.636363636364px;">
-                  <div class="tooltip-arrow"></div>
-                  <div class="tooltip-inner">90 : 675</div></div>
-                  <input type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" id="sl2"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="deskripsi" class="col-md-2 control-label">Deskripsi</label>
-                <div class="col-md-5">
-                  <textarea class="form-control" rows="3" id="deskripsi"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-md-2 col-md-offset-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-            </form>
+          </div>
+          <div class ="col-md-offset-4 text-right">
+            <a href="tambah_log.html" class="btn btn-primary btn-lg">
+              <span class="glyphicon glyphicon-plus-sign"></span> Tambah Log
+            </a>
+          </div>
+          <br>
+          <div class="row text-center">
+            <p class="lead">Anda belum pernah mengisi log pada mata kuliah ini</p>
           </div>
         </div>
       </div>
-
-      <footer class="footer">
-
-      </footer>
     </div>
+
+    <footer class="footer">
+
+    </footer>
+  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap-slider.js"></script>
-    <script src="../js/modernizer.js"></script>
   </body></html>
