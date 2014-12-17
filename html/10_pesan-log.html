@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daftar Log</title>
+  <title>Pesan</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/customized.css" rel="stylesheet">
+  <link href="../css/slider.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <!-- Navbar Bagian Atas -->
     <div class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -28,65 +28,49 @@
         <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Nama Mahasiswa</a></li>
-            <li><a href="#about">Manual</a></li>
-            <li><a href="#contact">Log out</a></li>
+            <li><a href="#">Manual</a></li>
+            <li><a href="#">Log out</a></li>
             <li>&nbsp&nbsp&nbsp&nbsp</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Tab Beranda, Lowongan, dkk -->
     <div class="container">
       <div role="navigation">
         <ul class="nav nav-justified">
           <li><a href="beranda.html">Beranda</a></li>
           <li><a href="lowongan.html">Lowongan</a></li>
           <li class="active"><a href="log.html">Log Asisten</a></li>
-          <li><a href="riwayat.html">Riwayat</a></li>
+          <li><a href="#">Riwayat</a></li>
           <li><a href="#">Pembayaran</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- Isi dari Halaman -->
     <div class="container">
-      <div class="row text-center">
-        <h2>Daftar Log</h2>
+      <div class="row text-left">
+        <h3>Tambah Pesan</h3>
       </div>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" id="deskripsi" required></textarea>
+        </div>
+        <div class="form-group">
+          <a href="11_tambah-pesan-log.html"> <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button></a>
+        </div>
+      </form>
       <div class="panel panel-default">
         <div class="panel-body">
-          <div class-"col-md-12">
-            <div class="col-md-3">
-              <span>Mata Kuliah:</span>
-              <div class="bs-component">
-                <div class="btn-toolbar">
-                  <div class="btn-group">
-                    <a href="log.html" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                      Basis Data
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="log.html">Basis Data</a></li>
-                      <li><a href="#">Sistem Cerdas</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class ="col-md-offset-4 text-right">
-            <a href="7_tambah-log-basdat.html" class="btn btn-primary btn-lg">
-              <span class="glyphicon glyphicon-plus-sign"></span> Tambah Log
-            </a>
-          </div>
-          <br>
-          <div class="row text-center">
-            <p class="lead">Anda belum pernah mengisi log pada mata kuliah ini</p>
+          <div class="col-md-12">
+            <b>23 Maret 2014, 15.00 WIB</b><br>
+            <p>Sepertinya terdapat kesalahan, seharusnya pemeriksaaan tugas 10</p>
+            <div class="text-right">Ani Budiman</div>
           </div>
         </div>
       </div>
     </div>
+
 
     <footer class="footer">
 
@@ -97,4 +81,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-slider.js"></script>
+    <script src="../js/modernizer.js"></script>
   </body></html>
