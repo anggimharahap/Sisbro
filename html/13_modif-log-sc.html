@@ -9,7 +9,7 @@
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/customized.css" rel="stylesheet">
-  <link href="../css/slider.css" rel="stylesheet">
+  <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
     <div class="container">
       <div class="row text-center">
         <h4>Pengisian Log Asisten</h4>
-        <h3>IKO31300 - Sistem Cerdas</h3>
+        <h3>IKI20700 - Basis Data</h3>
       </div>
       <div class="panel panel-default">
         <div class="panel-body">
@@ -59,32 +59,42 @@
             <div class="form-group">
               <label class="col-md-2 control-label">Tanggal</label>
               <div class="col-md-5">
-                <input class="form-control" placeholder="Tanggal Log" type="date" value="2014-04-01">
+                <div class="input-group date">
+                  <input type="text" class="form-control" id="datepicker" value="20/03/2014" required/>
+                  <span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
+                </div>
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-2 control-label">Waktu</label>
-              <div class="col-md-5">
-                <div class="slider slider-horizontal" style="width: 414px;">
-                  <div class="slider-track"><div class="slider-selection" style="left: 23.2323232323232%; width: 43.9393939393939%;">
-                  </div><div class="slider-handle round" style="left: 23.2323232323232%;"></div><div class="slider-handle round" style="left: 67.1717171717172%;"></div></div><div class="tooltip top" style="top: -40px; left: 159.636363636364px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">90 : 675</div></div><input type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" id="sl2"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="deskripsi" class="col-md-2 control-label">Deskripsi</label>
+              <div class="row col-md-5">
                 <div class="col-md-5">
-                  <textarea class="form-control" rows="3" id="deskripsi">Koreksi Berkas PR 10&#13;Jumlah 5 dari 10</textarea>
+                  <input type="text" class="form-control" id="timepicker1" value="10.00 AM" required/>
+                </div>
+                <div class="col-md-2">
+                  <label class="control-label">Sampai</label>
+                </div>
+                <div class="col-md-5">
+                  <input type="text" class="form-control" id="timepicker2" value="11.00 AM" required/>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="col-md-2 col-md-offset-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+            </div>
+            <div class="form-group">
+              <label for="deskripsi" class="col-md-2 control-label">Deskripsi</label>
+              <div class="col-md-5">
+                <textarea class="form-control" rows="3" id="deskripsi" required>Koreksi Berkas PR 9&#13;Jumlah 12 dari 12
+                </textarea>
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-2 col-md-offset-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
 
       <footer class="footer">
 
@@ -94,7 +104,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap-slider.js"></script>
-    <script src="../js/modernizer.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+      $('#datepicker').datetimepicker({
+        pickTime: false
+      });
+      $('#timepicker1').datetimepicker({
+        pickDate: false
+      });
+      $('#timepicker2').datetimepicker({
+        pickDate: false
+      });
+    </script>
   </body></html>
