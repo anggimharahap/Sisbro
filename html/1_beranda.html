@@ -34,7 +34,79 @@
         <ul class="nav navbar-nav">
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><img class ="circle" src="../img/question.png" alt="Smiley face" height="20" width="20"></a></li>
+            <li>
+					
+				  <!-- Popover Example 2 - JS -->
+				  <!-- Popover using JavaScript to set content from hidden div --> 
+				  <a href="#" id="popoverExampleTwo" data-placement="bottom">
+				  <img src="../img/question.png" alt="Smiley face" height="20" width="20">
+				  <div class ="pop-div">
+					<div id="hiddenMenuTitle" style="display: none">
+						Manual 
+					</div>  
+					<div class="panel-group" id="hiddenMenu" role="tablist" aria-multiselectable="true" style = "display:none">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							  Log Asisten
+							</a>
+						  </b>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+								
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							  Lowongan
+							</a>
+						  </b>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Pembayaran
+							</a>
+						  </b>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					</div>
+				  </a>
+	</li>
 			<li><a href="#"><img class ="circle" src="../img/door.png" alt="Smiley face" height="20" width="20"></a></li>
         </ul>
     </div>
@@ -58,7 +130,7 @@
                     <a href="#">Beranda</a>
                 </li>
                 <li>
-                    <a href="#">Lowongan</a>
+                    <a href="2_lowongan.html">Lowongan</a>
                 </li>
                 <li>
                     <a href="#">Log Asisten</a>
@@ -100,9 +172,32 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-		
+
+	<script>
+		$(function(){
+    
+			// Enabling Popover Example 1 - HTML (content and title from html tags of element)
+			$("[data-toggle=popover]").popover();
+
+			// Enabling Popover Example 2 - JS (hidden content and title capturing)
+			$("#popoverExampleTwo").popover({
+				html : true, 
+				content: function() {
+				  return $('#hiddenMenu').html();
+				},
+				title: function() {
+				  return $('#hiddenMenuTitle').html();
+				}
+			});
+
+		});
+	</script>
         <script>
             (function(){
 

@@ -38,3 +38,14 @@
 	color: #FFFFFF;
     background: #80DEEA;
 }
+
+
+.popover{
+	background-color: #FFFFFF;
+	color : #000000;
+	width: 300px;
+}
+
+.popover-content{
+	overflow-y : scroll;
+}
