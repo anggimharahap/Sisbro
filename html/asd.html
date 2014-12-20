@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Sistem Informasi Asisten</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Nama Mahasiswa</a></li>
+            <li>
+					
+				  <!-- Popover Example 2 - JS -->
+				  <!-- Popover using JavaScript to set content from hidden div --> 
+				  <a href="#" id="popoverExampleTwo" data-placement="bottom">
+					Manual
+				  <div class ="pop-div">
+					<div id="hiddenMenuTitle" style="display: none">
+						Manual 
+					</div>  
+					<div class="panel-group" id="hiddenMenu" role="tablist" aria-multiselectable="true" style = "display:none">
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							  Log Asisten
+							</a>
+						  </b>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+								
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							  Lowongan
+							</a>
+						  </b>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+						  <b class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#hiddenMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Pembayaran
+							</a>
+						  </b>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						  <div class="panel-body">
+							<dl>
+							  <dt>Mencari lowongan</dt>
+							  <dd>1. black hot drink</dd>
+							  <dt>Mendaftar lowongan</dt>
+							  <dd>- white cold drink</dd>
+							</dl>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					</div>
+				  </a>
+	</li>
+            <li><a href="#contact">Log out</a></li>
+            <li>&nbsp&nbsp&nbsp&nbsp</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div role="navigation">
+        <ul class="nav nav-justified">
+          <li class="active"><a href="1_beranda-kosong.html">Beranda</a></li>
+          <li><a href="2_lowongan.html">Lowongan</a></li>
+          <li><a href="#">Log Asisten</a></li>
+          <li><a href="#">Riwayat</a></li>
+          <li><a href="#">Pembayaran</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <h2>Pengumuman</h2>
+        <br/>
+        <p class="lead">Tidak ada pengumuman baru.</p>
+      </div>
+    </div>
+	
+	    
+    
+
+	
+
+    <footer class="footer">
+
+    </footer>
+  </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+    
+			// Enabling Popover Example 1 - HTML (content and title from html tags of element)
+			$("[data-toggle=popover]").popover();
+
+			// Enabling Popover Example 2 - JS (hidden content and title capturing)
+			$("#popoverExampleTwo").popover({
+				html : true, 
+				content: function() {
+				  return $('#hiddenMenu').html();
+				},
+				title: function() {
+				  return $('#hiddenMenuTitle').html();
+				}
+			});
+
+		});
+	</script>
+  </body></html>

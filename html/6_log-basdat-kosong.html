@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda</title>
+  <title>Daftar Log</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/customized.css" rel="stylesheet">
   <link href="../css/simple-sidebar.css" rel="stylesheet">
   <link href="../css/ripples.min.css" rel="stylesheet">
   <link href="../css/material-wfont.min.css" rel="stylesheet">
@@ -18,107 +19,81 @@
 </head>
 
 <body>
-<div>
-<div class="navbar navbar-default" id ="site-header">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+  <div class="container">
+    <!-- Navbar Bagian Atas -->
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" class="navbar-toggle collapsed">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="javascript:void(0)">SISTEM INFORMASI ASISTEN</a>
-    </div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><img class ="circle" src="../img/question.png" alt="Smiley face" height="20" width="20"></a></li>
-			<li><a href="#"><img class ="circle" src="../img/door.png" alt="Smiley face" height="20" width="20"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="wrapper">
-</br>
-</br>
-</br>
-       <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-				<li>
-					<div id ="profile-box" align ="center">
-						<a href ="profil.html">
-							<img class ="circle" src="../img/doraemon_wallpaper.jpg" alt="Smiley face" height="160" width="120">
-							<h5> Aradea Krisnaraga </h5>
-						</a>
-					</div>
-				</li>
-                <li class="active">
-                    <a href="#">Beranda</a>
-                </li>
-                <li>
-                    <a href="#">Lowongan</a>
-                </li>
-                <li>
-                    <a href="#">Log Asisten</a>
-                </li>
-                <li>
-                    <a href="#">Riwayat</a>
-                </li>
-                <li>
-                    <a href="#">Pembayaran</a>
-                </li>
-				<li>
-                    <a href="#">Log Out</a>
-                </li>
-</ul>
+          </button>
+          <!--<img src="#" class="pull-left">-->
+          <a href="/" class="navbar-brand">Sistem Informasi Asisten</a>
         </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-							<div class="row text-center">
-								
-							  <div class="panel panel-default col-lg-10 col-lg-offset-1">
-								<div class="panel-body">
-									<h2>Pengumuman</h2>	
-								  <div class="panel panel-danger">
-									<div class="panel-heading">
-									  <h3 class="panel-title"><strong>Pemberitahuan Fakultas</strong></h3>
-									</div>
-									<div class="panel-body">
-									  Sebelum mendaftar lowongan asisten, pastikan <a href="profil.html">profil</a> Anda sudah lengkap.
-									</div>
-								  </div>
-								  <div class="panel panel-default">
-									<div class="panel-heading">Sabtu, 20 Desember 2014</div>
-									<div class="panel-body">
-									  <ul>
-										<li>Anda telah membatalkan pendaftaran asisten pada mata kuliah IKI30202 - Rekayasa Perangkat Lunak</li>
-										<li>Anda telah diterima sebagai asisten untuk mata kuliah IKI20700 - Basis Data</li>
-										<li>Anda mendaftar sebagai asisten untuk mata kuliah IKI20700 - Basis Data</li>
-									  </ul>
-									</div>
-								  </div>
-								  <div class ="text-right">
-									<ul class="pagination pagination-sm">
-									  <li class="disabled"><a href="#">«</a></li>
-									  <li class="active"><a href="#">1</a></li>
-									  <li class="disabled"><a href="#">»</a></li>
-									</ul>
-								  </div>
-								</div>
-							  </div>
-						</div>
-						
-                </div>
-            </div>
+        <div class="navbar-collapse navbar-responsive-collapse collapse" style="height: 1px;">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Nama Mahasiswa</a></li>
+            <li><a href="#about">Manual</a></li>
+            <li><a href="#contact">Log out</a></li>
+            <li>&nbsp&nbsp&nbsp&nbsp</li>
+          </ul>
         </div>
-        <!-- /#page-content-wrapper -->
+      </div>
+    </div>
 
-</div>
-</div>
+    <!-- Tab Beranda, Lowongan, dkk -->
+    <div class="container">
+      <div role="navigation">
+        <ul class="nav nav-justified">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="lowongan.html">Lowongan</a></li>
+          <li class="active"><a href="log.html">Log Asisten</a></li>
+          <li><a href="riwayat.html">Riwayat</a></li>
+          <li><a href="#">Pembayaran</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Isi dari Halaman -->
+    <div class="container">
+      <div class="row text-center">
+        <h2>Daftar Log</h2>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class-"col-md-12">
+            <div class="col-md-3">
+              <span>Mata Kuliah:</span>
+              <div class="bs-component">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a href="log.html" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      Basis Data
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="log.html">Basis Data</a></li>
+                      <li><a href="log_sc.html">Sistem Cerdas</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class ="col-md-offset-4 text-right">
+            <a href="tambah_log.html" class="btn btn-primary btn-lg">
+              <span class="glyphicon glyphicon-plus-sign"></span> Tambah Log
+            </a>
+          </div>
+          <br>
+          <div class="row text-center">
+            <p class="lead">Anda belum pernah mengisi log pada mata kuliah ini</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
 
