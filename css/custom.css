@@ -49,3 +49,8 @@
 .popover-content{
 	overflow-y : scroll;
 }
+
+.table button {
+	width: 120px;
+}
+
